@@ -1,0 +1,25 @@
+.inputBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.inputBox {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #333;
+}

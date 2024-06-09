@@ -1,0 +1,43 @@
+.header {
+    background-color: transparent;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    margin-left: 200px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navList li {
+    margin-right: 30px;
+}
+
+.navList li:last-child {
+    margin-right: 200px;
+}
+
+.navList li a {
+    text-decoration: none;
+    color: #135440;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navList li a:hover {
+    color: #30B88E;
+}
