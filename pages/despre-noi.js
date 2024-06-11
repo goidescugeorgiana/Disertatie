@@ -39,7 +39,7 @@ export default function DespreNoi() {
             </p>
           </div>
           <div className={styles.imageContainer}>
-            <img src="/images/imageD.webp" alt="Despre noi" className={styles.image} />
+            <img src="/images/imageD.png" alt="Despre noi" className={styles.image} />
           </div>
         </section>
       </main>

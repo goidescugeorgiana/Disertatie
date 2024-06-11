@@ -4,7 +4,29 @@ import Slideshow from '../components/Slideshow';
 import styles from '../styles/index.module.css';
 import { useRouter } from 'next/router';
 
-export default function Home() {
+export async function getServerSideProps() {
+  const [resInscrisi, resRecords, resAjutate] = await Promise.all([
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/inscrisi/count`),
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/records/count`),
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/ajutate/count`),
+  ]);
+
+  const [countInscrisi, countRecords, countAjutate] = await Promise.all([
+    resInscrisi.json(),
+    resRecords.json(),
+    resAjutate.json(),
+  ]);
+
+  return {
+    props: {
+      countInscrisi,
+      countRecords,
+      countAjutate,
+    },
+  };
+}
+
+export default function Home({ countInscrisi, countRecords, countAjutate }) {
   const router = useRouter();
 
   const handleVolunteerClick = () => {
@@ -29,10 +51,26 @@ export default function Home() {
             Vreau să fiu Voluntar!
           </button>
         </section>
+        <section className={styles.statsSection}>
+          <div className={styles.statsContainer}>
+            <div className={styles.statsItem}>
+              <img src="/images/voluntari.png" alt="Voluntari" />
+              <p>{countInscrisi}</p>
+            </div>
+            <div className={styles.statsItem}>
+              <img src="/images/cauze.png" alt="Cauze" />
+              <p>{countRecords}</p>
+            </div>
+            <div className={styles.statsItem}>
+              <img src="/images/ajutate.png" alt="Ajutate" />
+              <p>{countAjutate}</p>
+            </div>
+          </div>
+        </section>
         <section className={styles.aboutSection}>
           <div className={styles.container}>
             <div className={styles.imageContainer}>
-              <img src="/images/imageD.webp" alt="Despre noi" className={styles.image} />
+              <img src="/images/imageD.png" alt="Despre noi" className={styles.image} />
             </div>
             <div className={styles.textContainer}>
               <h2>DESPRE NOI</h2>
