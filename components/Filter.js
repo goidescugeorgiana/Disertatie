@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from '../styles/Filter.module.css';
 
-const Filter = ({ filters = {}, selectedFilters, onFilterChange }) => {
+const Filter = ({ filters = {}, selectedFilters, onFilterChange, onOngChange, ongOptions }) => {
   return (
     <div className={styles.filterContainer}>
       {Object.keys(filters).map((filterKey) => (
@@ -25,6 +25,15 @@ const Filter = ({ filters = {}, selectedFilters, onFilterChange }) => {
           </ul>
         </div>
       ))}
+      <div className={styles.filterSection}>
+        <h3 className={styles.filterTitle}>Nume ONG</h3>
+        <select className={styles.filterDropdown} onChange={onOngChange}>
+          <option value="">Select ONG</option>
+          {ongOptions.map((ong) => (
+            <option key={ong} value={ong}>{ong}</option>
+          ))}
+        </select>
+      </div>
     </div>
   );
 };

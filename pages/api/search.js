@@ -1,34 +1,33 @@
-// pages/api/search.js
 import { connectToDatabase } from '../../lib/mongodb';
 
 export default async function handler(req, res) {
   if (req.method === 'GET') {
-    const { q } = req.query;
+    const { query } = req.query; // Change from `q` to `query`
 
-    if (!q) {
+    if (!query) {
       return res.status(400).json({ message: 'Query parameter is required' });
     }
 
     try {
       const { db } = await connectToDatabase();
-      const query = {
+      const searchQuery = {
         $or: [
-          { ONG: { $regex: q, $options: 'i' } },
-          { Oras: { $regex: q, $options: 'i' } },
-          { Județ: { $regex: q, $options: 'i' } },
-          { Adresa: { $regex: q, $options: 'i' } },
-          { Nume: { $regex: q, $options: 'i' } },
-          { Prenume: { $regex: q, $options: 'i' } },
-          { Email: { $regex: q, $options: 'i' } },
-          { Telefon: { $regex: q, $options: 'i' } },
-          { Tip: { $regex: q, $options: 'i' } },
-          { Frecventa: { $regex: q, $options: 'i' } },
-          { Nivel: { $regex: q, $options: 'i' } },
-          { Beneficiar: { $regex: q, $options: 'i' } },
-          { Disponibilitate: { $regex: q, $options: 'i' } }
+          { ONG: { $regex: query, $options: 'i' } },
+          { Oras: { $regex: query, $options: 'i' } },
+          { Județ: { $regex: query, $options: 'i' } },
+          { Adresa: { $regex: query, $options: 'i' } },
+          { Nume: { $regex: query, $options: 'i' } },
+          { Prenume: { $regex: query, $options: 'i' } },
+          { Email: { $regex: query, $options: 'i' } },
+          { Telefon: { $regex: query, $options: 'i' } },
+          { Tip: { $regex: query, $options: 'i' } },
+          { Frecventa: { $regex: query, $options: 'i' } },
+          { Nivel: { $regex: query, $options: 'i' } },
+          { Beneficiar: { $regex: query, $options: 'i' } },
+          { Disponibilitate: { $regex: query, $options: 'i' } }
         ]
       };
-      const records = await db.collection('records').find(query).project({ ONG: 1, Județ: 1 }).toArray();
+      const records = await db.collection('records').find(searchQuery).project({ ONG: 1, Județ: 1 }).toArray();
 
       return res.status(200).json(records);
     } catch (error) {

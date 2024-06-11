@@ -1,40 +1,51 @@
-/* styles/Search.module.css */
 .searchContainer {
     position: relative;
+    display: inline-block;
   }
   
   .searchIcon {
-    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #135440;
   }
   
   .searchInput {
-    padding: 8px;
+    padding: 10px 10px 10px 30px;
+    width: 300px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-left: 10px;
+    outline: none;
   }
   
-  .searchResults {
+  .resultsContainer {
     position: absolute;
-    top: 40px; /* Adjust to ensure it sticks to the search box */
+    top: 100%;
     left: 0;
-    width: 100%;
-    background: white;
+    right: 0;
+    background-color: white; /* Ensure background is white */
     border: 1px solid #ccc;
-    border-radius: 4px;
-    max-height: 300px;
-    overflow-y: auto;
+    border-top: none; /* Remove top border to connect seamlessly with the search input */
     z-index: 1000;
-    padding: 10px;
-    box-sizing: border-box;
+    max-height: 300px; /* Optional: limit height and make it scrollable */
+    overflow-y: auto;
+    border-radius: 0 0 4px 4px; /* Optional: rounded corners at the bottom */
   }
   
   .resultItem {
     padding: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resultItem:last-child {
+    border-bottom: 4; /* Remove border from last item */
   }
   
   .resultItem:hover {
-    background: #f1f1f1;
+    background-color: #135440;
+    color: white;
   }
   

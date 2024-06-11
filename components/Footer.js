@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
-        <p>&copy; 2024 Eu sunt Voluntar. Toate drepturile rezervate.</p>
+        <p>&copy; 2024 "Vreau să fiu voluntar!". Toate drepturile rezervate.</p>
         <div className={styles.socialIcons}>
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
             <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />

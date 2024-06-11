@@ -1,8 +1,10 @@
+/* styles/Filter.module.css */
 .filterContainer {
-    padding: 10px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    margin-right: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
   }
   
   .filterSection {
@@ -10,27 +12,22 @@
   }
   
   .filterTitle {
-    font-weight: bold;
+    font-size: 18px;
     margin-bottom: 10px;
   }
   
   .filterList {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
   }
   
-  .filterOption {
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+  .filterList li {
+    margin-bottom: 5px;
   }
   
-  .filterOption:hover {
-    background-color: #e0e0e0;
-  }
-  
-  .selected {
-    background-color: #c0c0c0;
+  .filterDropdown {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
   }
   
