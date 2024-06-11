@@ -1,0 +1,40 @@
+/* styles/Search.module.css */
+.searchContainer {
+    position: relative;
+  }
+  
+  .searchIcon {
+    cursor: pointer;
+  }
+  
+  .searchInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+  
+  .searchResults {
+    position: absolute;
+    top: 40px; /* Adjust to ensure it sticks to the search box */
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .resultItem {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .resultItem:hover {
+    background: #f1f1f1;
+  }
+  

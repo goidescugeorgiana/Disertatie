@@ -1,0 +1,13 @@
+#applyButton {
+    background-color: #135440;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#applyButton:hover {
+    transform: scale(1.1);
+}

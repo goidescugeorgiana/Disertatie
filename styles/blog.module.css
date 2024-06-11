@@ -1,0 +1,36 @@
+.main {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .blogArticle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .articleImage {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
+  .articleContent {
+    text-align: left;
+  }
+  
+  .articleContent h2 {
+    color: #135440;
+    margin: 0 0 10px;
+  }
+  
+  .articleContent p {
+    color: #555;
+    line-height: 1.6;
+  }
+  

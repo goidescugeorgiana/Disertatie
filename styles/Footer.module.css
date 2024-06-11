@@ -1,0 +1,39 @@
+/* styles/Footer.module.css */
+
+.footer {
+    background-color: #135440;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footerContent p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .socialIcons {
+    margin-top: 10px;
+  }
+  
+  .socialIcons a {
+    margin: 0 10px;
+  }
+  
+  .socialIcons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+  }
+  
+  .socialIcons img:hover {
+    transform: scale(1.1);
+  }
+  

@@ -1,27 +1,44 @@
-.aboutContent {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+/* styles/despreNoi.module.css */
+
+.main {
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.aboutImage {
-    width: 300px;
-    height: auto;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px;
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  
+  .textContainer {
+    flex: 1;
     margin-right: 20px;
-    border-radius: 8px;
-}
-
-.textContent {
-    max-width: 800px;
-}
-
-.textContent p {
-    color: #555;
+  }
+  
+  .textContainer h1 {
+    font-size: 36px;
+    color: #135440;
+  }
+  
+  .textContainer p {
+    font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 15px;
-}
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  

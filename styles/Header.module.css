@@ -1,43 +1,62 @@
+/* styles/Header.module.css */
 .header {
     background-color: transparent;
-    padding: 20px 0;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    margin-left: 200px;
-}
-
-.logo img {
-    width: 150px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .header.scrolled {
+    background-color: white;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  .logo img {
+    width: 170px;
     height: auto;
-}
-
-.navList {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  }
+  
+  .navList {
     display: flex;
-}
-
-.navList li {
-    margin-right: 30px;
-}
-
-.navList li:last-child {
-    margin-right: 200px;
-}
-
-.navList li a {
-    text-decoration: none;
+    list-style: none;
+    padding-right: 50px;
+    margin-left: auto;
+  }
+  
+  .navListWhite a {
+    color: white;
+  }
+  
+  .navListScrolled a {
     color: #135440;
+  }
+  
+  .navList li {
+    margin: 0 50px;
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-}
-
-.navList li a:hover {
+  }
+  
+  .navLinkScrolled {
+    color: #135440;
+  }
+  
+  .navLink:hover {
     color: #30B88E;
-}
+  }
+  

@@ -1,10 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+export default {
   webpack(config) {
-    config.plugins.push(new webpack.EnvironmentPlugin(localEnv));
     return config;
   },
 };
-
-export default nextConfig;

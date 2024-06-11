@@ -1,0 +1,23 @@
+/* styles/Layout.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+  
+  .main {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footer {
+    padding: 2rem 0;
+    width: 100%;
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+  }
+  

@@ -1,40 +1,11 @@
-// js/utils/apiMethods.js
-export const sendOk = (res, data) => {
-	res.status(200).json(
-		{
-			'data': data,
-		}
-	);
-};
+// Importul dependențelor
+import { sendOk, sendNotFound, sendBadRequest, sendUnauthorized, sendMethodNotAllowed } from './apiMethods';
 
-export const sendNotFound = (res, message) => {
-	res.status(404).json(
-		{
-			'error': message,
-		}
-	);
-};
-
-export const sendBadRequest = (res, message) => {
-	res.status(400).json(
-		{
-			'error': message,
-		}
-	);
-};
-
-export const sendUnauthorized = (res, message) => {
-	res.status(401).json(
-		{
-			'error': message,
-		}
-	);
-};
-
-export const sendMethodNotAllowed = res => {
-	res.status(405).json(
-		{
-			'error': 'Method not allowed',
-		}
-	);
+// Exportul funcțiilor
+export {
+  sendOk,
+  sendNotFound,
+  sendBadRequest,
+  sendUnauthorized,
+  sendMethodNotAllowed
 };

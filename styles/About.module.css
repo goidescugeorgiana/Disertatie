@@ -1,0 +1,27 @@
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-content img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.text-content {
+    max-width: 800px;
+    text-align: left;
+}
+
+.text-content p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
