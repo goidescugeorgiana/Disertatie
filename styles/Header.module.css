@@ -58,3 +58,17 @@
 .header.scrolled .searchIcon {
     color: #135440; /* color when scrolled */
 }
+
+.profileIcon {
+    color: white; /* default color */
+    font-size: 24px; /* adjust the size as needed */
+    transition: color 0.3s ease;
+}
+
+.header.scrolled .profileIcon {
+    color: #135440; /* color when scrolled */
+}
+
+.profileIcon:hover, .header.scrolled .profileIcon:hover {
+    color: #30B88E; /* color on hover */
+}

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Search from './Search';
+import { FaUser } from 'react-icons/fa';
 import styles from '../styles/Header.module.css';
 
 export default function Header() {
@@ -40,6 +41,12 @@ export default function Header() {
           <li><Link href="/voluntar">Voluntariat</Link></li>
           <li><Link href="/blog">Blog</Link></li>
           <li><Link href="/contact">Contact</Link></li>
+          <li>
+            <FaUser
+              className={`${styles.profileIcon} ${router.pathname !== '/' || scrolled ? styles.scrolled : ''}`}
+              onClick={() => router.push('/login')}
+            />
+          </li>
         </ul>
       </nav>
     </header>

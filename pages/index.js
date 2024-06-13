@@ -85,6 +85,23 @@ export default function Home({ countInscrisi, countRecords, countAjutate }) {
             </div>
           </div>
         </section>
+        <section className={styles.callToActionSection}>
+          <div className={styles.callToActionContainer}>
+            <div className={styles.leftSection}>
+              <h2>Vrei să fii voluntar? Alege din varietatea cauzelor noastre de voluntariat! Filtrează în funcție de preferințele tale și înscrie-te!</h2>
+              <button 
+                id="volunteerButton" 
+                className={styles.callToActionButton} 
+                onClick={handleVolunteerClick}
+              >
+                Mă înscriu!
+              </button>
+            </div>
+            <div className={styles.rightSection}>
+              <h2>Ești un ONG și vrei să te înscrii în catalogul nostru pentru a oferi utilizatorilor posibilitatea să facă voluntariat? Înscrie-te pe pagina noastră și te vom contacta în cel mai scurt timp!</h2>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>

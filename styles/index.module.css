@@ -1,120 +1,153 @@
-/* styles/index.module.css */
-
 .main {
-  position: relative;
-}
-
-.slideshowSection {
-  height: 100vh; /* Full screen height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.statsSection {
-  padding: 50px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-}
-
-.statsContainer {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-}
-
-.statsItem {
-  text-align: center;
-  flex: 1;
-}
-
-.statsItem img {
-  max-width: 100px;
-  height: auto;
-}
-
-.statsItem p {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.aboutSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-}
-
-.applyButton {
-  position: absolute;
-  bottom: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: transparent;
-  color: white;
-  font-size: 20px;
-  padding: 15px 30px;
-  border: 2px solid white;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.applyButton:hover {
-  background-color: #135440;
-  color: white;
-  border: 2px solid transparent;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.imageContainer {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.image {
-  max-width: 60%;
-  height: auto;
-}
-
-.textContainer {
-  flex: 1;
-  padding-left: 50px;
-}
-
-.textContainer h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.textContainer p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.despreButton {
-  background-color: #135440;
-  color: white;
-  font-size: 20px;
-  padding: 15px 30px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.despreButton:hover {
-  background-color: #30B88E;
-  color: white;
-}
+    position: relative;
+  }
+  
+  .slideshowSection {
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .statsSection {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .statsContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+  }
+  
+  .statsItem {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .statsItem img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .statsItem p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .aboutSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  .applyButton {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .applyButton:hover {
+    background-color: #135440;
+    color: white;
+    border: 2px solid transparent;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    max-width: 60%;
+    height: auto;
+  }
+  
+  .textContainer {
+    flex: 1;
+    padding-left: 50px;
+  }
+  
+  .textContainer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .textContainer p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .despreButton {
+    background-color: #135440;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .despreButton:hover {
+    background-color: #30B88E;
+    color: white;
+  }
+  
+  .callToActionSection {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .callToActionContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .leftSection, .rightSection {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .callToActionButton {
+    background-color: #135440;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    margin-top: 20px;
+  }
+  
+  .callToActionButton:hover {
+    background-color: #30B88E;
+    color: white;
+  }
+  
