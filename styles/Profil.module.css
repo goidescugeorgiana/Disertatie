@@ -1,45 +1,17 @@
 /* styles/Profil.module.css */
+
 .main {
-    padding: 50px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
   }
   
-  .profileTitle {
+  .main h1 {
     font-size: 36px;
     margin-bottom: 20px;
-  }
-  
-  .form {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: left;
-  }
-  
-  .formGroup {
-    margin-bottom: 20px;
-  }
-  
-  .formLabel {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .formInput {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  .submitButton {
-    background-color: #135440;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .submitButton:hover {
-    background-color: #30B88E;
   }
   

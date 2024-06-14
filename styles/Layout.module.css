@@ -1,23 +1,77 @@
-/* styles/Layout.module.css */
+/* styles/Login.module.css */
 
-.container {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 2rem;
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
   }
   
-  .main {
-    padding: 2rem 0;
-    text-align: center;
+  .title {
+    font-size: 36px;
+    margin-bottom: 20px;
   }
   
-  .footer {
-    padding: 2rem 0;
+  .form {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    text-align: center;
-    background-color: #282c34;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .form button {
+    padding: 10px 15px;
+    background-color: #135440;
     color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .form button:hover {
+    background-color: #30B88E;
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 15px;
+  }
+  
+  .links {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .links a {
+    color: #135440;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+  }
+  
+  .links a:hover {
+    color: #30B88E;
   }
   
